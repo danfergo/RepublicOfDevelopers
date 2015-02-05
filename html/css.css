@@ -1,14 +1,4 @@
-
-/*Mobile Design*/
-
-@media screen and (min-width: 500px) {
-	/*Tablet Design*/
-}
-
-@media screen and (min-width: 900px) {
-	/*Desktop Design*/
-	html{
-		background: url(resources/bg.jpg) no-repeat center center fixed; 
+	html{
 		color: green;
 		margin:0;
 		padding:0;
