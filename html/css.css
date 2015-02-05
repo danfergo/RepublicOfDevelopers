@@ -1,96 +1,95 @@
 
-	html{
-		color: green;
-		background-color: black;
-		margin:0;
-		padding:0;
-	}
+    html{
+            color: green;
+            background-color: black;
+            margin:0;
+            padding:0;
+    }
 
-	body {
-		margin:0;
-		padding:0;
-		height:100%;
-	}
+    body {
+            margin:0;
+            padding:0;
+            height:100%;
+    }
 
-	#logo {
-		position: fixed;
-		width: 300px;
-		left: 50%;
-		margin-left: -190px;
-		margin-top: 10%;
-	}
+    #logo {
+            position: fixed;
+            width: 300px;
+            left: 50%;
+            margin-left: -190px;
+            margin-top: 10%;
+    }
 
-	/* entire container, keeps perspective */
-	.flip-container {
-		perspective: 1000;
+    /* entire container, keeps perspective */
+    .flip-container {
+            perspective: 1000;
 
-	}
-	/* flip the pane when hovered */
-	.flip-container .flipper, .flip-container .flipper {
-		transform: rotateY(180deg);
-	}
+    }
+    /* flip the pane when hovered */
+    .flip-container .flipper, .flip-container .flipper {
+            transform: rotateY(180deg);
+    }
 
-	.flip-container, .front, .back {
-		width: 300px;
-		height: 300px;
-	}
+    .flip-container, .front, .back {
+            width: 300px;
+            height: 300px;
+    }
 
-	/* flip speed goes here */
-	.flipper {
-		transition: 2s;
-		transform-style: preserve-3d;
+    /* flip speed goes here */
+    .flipper {
+            transition: 2s;
+            transform-style: preserve-3d;
 
-		position: relative;
-	}
+            position: relative;
+    }
 
-	/* hide back of pane during swap */
-	.front, .back {
-		backface-visibility: hidden;
+    /* hide back of pane during swap */
+    .front, .back {
+            backface-visibility: hidden;
 
-		position: absolute;
-		width: 300px;
-		height: 300px;
-		
-		text-align: center;
-	}
+            position: absolute;
+            width: 300px;
+            height: 300px;
 
-	/* front pane, placed above back */
-	.front {
-		z-index: 2;
-		/* for firefox 31 */
-		transform: rotateY(0deg);
-	}
+            text-align: center;
+    }
 
-	/* back, initially hidden pane */
-	.back {
-		transform: rotateY(180deg);
-	}
+    /* front pane, placed above back */
+    .front {
+            z-index: 2;
+            /* for firefox 31 */
+            transform: rotateY(0deg);
+    }
 
-	#footer {
-		width:100%;
-		height:40px;
-		margin:0;
-		padding:0;
-		position:fixed;
-		bottom:0;
-		left:0;
-	}
+    /* back, initially hidden pane */
+    .back {
+            transform: rotateY(180deg);
+    }
 
-	#footerList {
-		list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	margin-top: 10px;
-    	text-align: center;
-	}
+    #footer {
+            width:100%;
+            height:40px;
+            margin:0;
+            padding:0;
+            position:fixed;
+            bottom:0;
+            left:0;
+    }
 
-	#footerList li {
-		display: inline;
-		margin-right: 50px;
-	}
+    #footerList {
+            list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    text-align: center;
+    }
 
-	#footerList li a {
-		text-decoration: none;
-		color: green;
-	}
-}
+    #footerList li {
+            display: inline;
+            margin-right: 50px;
+    }
+
+    #footerList li a {
+            text-decoration: none;
+            color: green;
+    }
