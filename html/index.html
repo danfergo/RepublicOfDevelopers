@@ -4,11 +4,16 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		<script src="js.js"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
 		<link rel="stylesheet" href="css.css" type="text/css">
 	</head>
 	<body>
 		<div id="logo">
-			<!--<div onclick="this.className == 'flip-container' ? this.className = '' : this.className = 'flip-container'; ">-->
 			<div onclick="this.className = 'flip-container';">
 				<div class="flipper">
 					<div class="front"><img src="resources/logoF.png" style="width:300px;height:300px"></div>
@@ -16,8 +21,10 @@
 						
 						<form style="padding: 80px;">
 							<br>
-							Username : <input type="text"><br>
-							Password : <input type="text"><br>
+							<input type="text" placeholder="Username"><br>
+							<input type="password" name="txtPassword" placeholder="Password" onkeypress="capLock(event)" />
+							<div id="capslockAlert" style="visibility:hidden"><span class="label label-danger">Capslock is ON !!</span></div> 
+
 							<button>Enter</button>
 							<a href="main.html">Preview</a>
 						</form>	

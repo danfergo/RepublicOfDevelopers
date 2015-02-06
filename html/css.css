@@ -1,12 +1,12 @@
 
     html{
-            color: green;
-            background-color: black;
             margin:0;
             padding:0;
     }
 
     body {
+            background-color: #000;
+            color: green;
             margin:0;
             padding:0;
             height:100%;
@@ -18,6 +18,11 @@
             left: 50%;
             margin-left: -190px;
             margin-top: 10%;
+    }
+
+    #capslockAlert {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     /* entire container, keeps perspective */
@@ -78,10 +83,10 @@
 
     #footerList {
             list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-    text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+            text-align: center;
     }
 
     #footerList li {
