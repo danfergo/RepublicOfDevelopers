@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RoD</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+		
+		<link rel="stylesheet" href="cssProfile.css" type="text/css">
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="index.html">RoD</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <div class="navbar-form navbar-left">
+			    <div class="input-group">
+			      <input type="text" class="form-control" placeholder="Java/C++/Assembly">
+			      <span class="input-group-btn">
+			        <button type="button" class="btn btn-default" aria-label="Search">
+					  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+					</button>
+			      </span>
+			    </div><!-- /input-group -->
+			  </div><!-- /.col-lg-6 -->
+		      <ul class="nav navbar-nav navbar-right">
+		      	<li>
+		      		<a href="#">Mensagens <span class="badge">42</span></a>
+		      	</li>
+		        <li class="dropdown">
+		          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nome<span class="caret"></span></a>
+				        <ul class="dropdown-menu" role="menu">
+				           <li><a href="#">Perfil</a></li>
+				           <li><a href="#">Definições de Conta</a></li>
+				           <li class="divider"></li>
+				           <li><a href="#">Sair</a></li>
+				        </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="container-fluid">
+			<div class="jumbotron">
+				<div id="profileTitle">
+				<img src="resources/face.jpg" style="height:100px;width:100px;">
+				<h3>Fernando Pinto</h3>
+				<small>Fundador da RoD</small>
+				</div>
+
+				<div class="container-fluid">
+					<div class="col-xs-12 col-md-3">
+						<h4>Medalhas</h4>
+						<div class="row">
+							<div class="col-xs-2 col-md-3">
+							    <a href="#" class="thumbnail">
+							    	<img src="resources/JsEmblem.jpg" style="width:50px; height:50px;">
+							    </a>
+							</div>
+							<div class="col-xs-2 col-md-3">
+						    	<a href="#" class="thumbnail">
+						      		<img src="resources/JsEmblem.jpg" style="width:50px; height:50px;">
+						    	</a>
+						  	</div>
+						  	<div class="col-xs-2 col-md-3">
+							    <a href="#" class="thumbnail">
+							    	<img src="resources/JsEmblem.jpg" style="width:50px; height:50px;">
+							    </a>
+							</div>
+							<div class="col-xs-2 col-md-3">
+						    	<a href="#" class="thumbnail">
+						      		<img src="resources/JsEmblem.jpg" style="width:50px; height:50px;">
+						    	</a>
+						  	</div>
+						  	<div class="col-xs-2 col-md-3">
+							    <a href="#" class="thumbnail">
+							    	<img src="resources/JsEmblem.jpg" style="width:50px; height:50px;">
+							    </a>
+							</div>
+							<div class="col-xs-2 col-md-3">
+						    	<a href="#" class="thumbnail">
+						      		<img src="resources/JsEmblem.jpg" style="width:50px; height:50px;">
+						    	</a>
+						  	</div>
+						  	<div class="col-xs-2 col-md-3">
+							    <a href="#" class="thumbnail">
+							    	<img src="resources/JsEmblem.jpg" style="width:50px; height:50px;">
+							    </a>
+							</div>
+							<div class="col-xs-2 col-md-3">
+						    	<a href="#" class="thumbnail">
+						      		<img src="resources/JsEmblem.jpg" style="width:50px; height:50px;">
+						    	</a>
+						  	</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<h3>Informação Pessoal</h3>
+						<ul>
+							<li>Profissao: Estudante</li>
+							<li>Localidade: Porto</li>
+							<li>Idade: 22 anos</li>
+							<li>Hobbies: Social Engineering, Segurança Web, Linux, Jogos PC</li>
+							<li>Linguagem Favorita: JS</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<h3>Actividade</h3>
+						<div class="list-group">
+						  <a href="#" class="list-group-item disabled">Tópico Bloqueado</a>
+						  <a href="#" class="list-group-item">Pergunta C++ - Lista ou Vectores ?</a>
+						  <a href="#" class="list-group-item disabled">Tópico Bloqueado</a>
+						  <a href="#" class="list-group-item">Tópico sobre a futebolada, que clube acham ...</a>
+						  <a href="#" class="list-group-item">Java - Como construir uma aplicação decente</a>  
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<h3>Desafios Resolvidos</h3>
+						<div class="list-group">
+						  <a href="#" class="list-group-item disabled">Desafio Bloqueado</a>
+						  <a href="#" class="list-group-item">C++ - Desafio de Encriptação <span class="label label-warning">2º lugar</span></a>
+						  <a href="#" class="list-group-item disabled">Desafio Bloqueado</a>
+						  <a href="#" class="list-group-item disabled">Desafio Bloqueado</a> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
