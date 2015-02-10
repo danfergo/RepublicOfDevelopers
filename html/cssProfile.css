@@ -6,3 +6,21 @@ body {
 #profileTitle {
 	text-align: center;
 }
+
+#ListMedalsBox {
+	width: 400px;
+	padding: 0;
+	margin: auto;
+}
+
+#ListMedals {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+}
+
+#ListMedals li {
+	display: inline;
+	margin: 5px;
+}
