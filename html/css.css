@@ -35,7 +35,7 @@
             perspective: 1000;
 
     }
-    /* flip the pane when hovered */
+    /* flip the pane when clicked */
     .flip-container .flipper, .flip-container .flipper {
             transform: rotateY(180deg);
     }
@@ -47,7 +47,7 @@
 
     /* flip speed goes here */
     .flipper {
-            transition: 2s;
+            transition: 1s cubic-bezier(1.000, 0.015, 1.000, 0.975);
             transform-style: preserve-3d;
 
             position: relative;
