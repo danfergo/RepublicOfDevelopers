@@ -1,0 +1,8 @@
+body {
+	background-color: black;
+	padding-top: 70px;
+}
+
+textarea {
+    resize: none;
+}

@@ -3,6 +3,10 @@ body {
 	padding-top: 70px;
 }
 
+.topico {
+	height: 350px;
+}
+
 #popupTopic {
 	display: none;
 	width: 900px;
