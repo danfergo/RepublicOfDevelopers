@@ -4,18 +4,29 @@ body {
 }
 
 .topico {
-	height: 300px;
+	
 	overflow: hidden;
 }
 
 .noticia {
-	height: 500px;
+	height: 400px;
 	overflow: hidden;
 }
 
 .noticia .descricao {
 	font-size: 12px;
 	margin: 10px;
+}
+
+.exercicio {
+	
+	text-align: center;
+	background-color: #eee;
+}
+
+.exercicio h3 {
+	font-weight: bold;
+	color: gray;
 }
 
 #popupTopic {
