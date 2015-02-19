@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
 		
-		<link rel="stylesheet" href="style/profile.css" type="text/css">
+		<link rel="stylesheet" href="style/settings.css" type="text/css">
 	</head>
 	<body>
 		
@@ -61,44 +61,55 @@
 
 		<div class="container-fluid">
 			<div class="jumbotron">
-				<div id="profileTitle">
-				<img src="resources/fotos/1.jpg" style="height:100px;width:100px;" class="img-circle">
-				<h3>Fernando Pinto</h3>
-				<small>Fundador da RoD</small>
-				<div id="ListMedalsBox">
-					<ul id="ListMedals">
-						<li><img src="resources/medals/JS/beginner.png" title="Medalha JavaScript - Beginner" style="width:40px; height:40px;"></li>
-						<li><img src="resources/medals/JS/files.png" title="Medalha JavaScript - Files" style="width:40px; height:40px;"></li>
-						<li><img src="resources/medals/C++/pointers.png" title="Medalha C++ - Pointers" style="width:40px; height:40px;"></li>
-						<li><img src="resources/medals/JAVA/beginner.png" title="Medalha Java - Beginner" style="width:40px; height:40px;"></li>
-					</ul>
-				</div>
+				<ul class="nav nav-tabs">
+				  <li role="presentation"><a href="sConta.html">Conta</a></li>
+				  <li role="presentation"><a href="sPerfil.html">Perfil</a></li>
+				  <li role="presentation" class="active"><a href="sSite.html">Site</a></li>
+				</ul>
 
 				<div class="container-fluid">
-					<div class="col-xs-12 col-md-4">
-						<h3>Informação Pessoal</h3>
-						<div class="list-group">
-						  <div class="list-group-item">Profissao: Estudante</div>
-						  <div href="#" class="list-group-item">Localidade: Porto</div>
-						  <div href="#" class="list-group-item">Idade: 22 anos</div>
-						  <div href="#" class="list-group-item">Hobbies: Social Engineering, Segurança Web, Linux, Jogos PC</div>
-						  <div href="#" class="list-group-item">Linguagem Favorita: Todas</div>
+					<div class="col-xs-12 col-md-4 col-md-offset-4">
+					<h2>Definições do Site</h2>
+						<br>
+						<div class="input-group">
+					    	
+					    	<label>Tema</label>
+							<div class="radio">
+							  <label class="radio-inline">
+							    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+							    Dark
+							  </label>
+							  <label class="radio-inline">
+							    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+							    Light
+							  </label>
+							</div>
+					    </div>	
+						<br>
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1">Lingua</span>
+							<select class="form-control">
+							  <option>Português</option>
+							  <option>Inglês</option>
+							  <option>Francês</option>
+							  <option>Alemão</option>
+							</select>
 						</div>
-					</div>
-					<div class="col-xs-12 col-md-4">
-						<h3>Actividade</h3>
-						<div class="list-group">
-						  <a href="topic.html" class="list-group-item">Organização de código <span class="label label-success">Java</span> <span class="label label-success">Game Development</span></a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-4">
-						<h3>Desafios Resolvidos</h3>
-						<div class="list-group">
-						  <a href="#" class="list-group-item disabled">Desafio Bloqueado</a>
-						  <a href="#" class="list-group-item">C++ - Desafio de Encriptação <span class="label label-warning">2º lugar</span></a>
-						  <a href="#" class="list-group-item disabled">Desafio Bloqueado</a>
-						  <a href="#" class="list-group-item disabled">Desafio Bloqueado</a> 
-						</div>
+						<br>
+						<fieldset disabled>
+							<form class="form-inline">
+								<label>Convites <span class="badge">0</span></label>
+							  	<div class="form-group">
+							   		<input type="text" class="form-control" placeholder="Nome" size="14">
+							  	</div>
+							  	<div class="form-group">
+							    	<input type="email" class="form-control" placeholder="Email" size="14">
+							  	</div>
+							  	<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+							</form>
+						</fieldset>
+						<br>
+						<p class="text-center"><button type="submit" class="btn btn-default">Confirmar</button></p>
 					</div>
 				</div>
 			</div>

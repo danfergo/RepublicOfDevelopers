@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
 		
-		<link rel="stylesheet" href="style/profile.css" type="text/css">
+		<link rel="stylesheet" href="style/settings.css" type="text/css">
 	</head>
 	<body>
 		
@@ -61,44 +61,66 @@
 
 		<div class="container-fluid">
 			<div class="jumbotron">
-				<div id="profileTitle">
-				<img src="resources/fotos/1.jpg" style="height:100px;width:100px;" class="img-circle">
-				<h3>Fernando Pinto</h3>
-				<small>Fundador da RoD</small>
-				<div id="ListMedalsBox">
-					<ul id="ListMedals">
-						<li><img src="resources/medals/JS/beginner.png" title="Medalha JavaScript - Beginner" style="width:40px; height:40px;"></li>
-						<li><img src="resources/medals/JS/files.png" title="Medalha JavaScript - Files" style="width:40px; height:40px;"></li>
-						<li><img src="resources/medals/C++/pointers.png" title="Medalha C++ - Pointers" style="width:40px; height:40px;"></li>
-						<li><img src="resources/medals/JAVA/beginner.png" title="Medalha Java - Beginner" style="width:40px; height:40px;"></li>
-					</ul>
-				</div>
+				<ul class="nav nav-tabs">
+				  <li role="presentation"><a href="sConta.html">Conta</a></li>
+				  <li role="presentation" class="active"><a href="sPerfil.html">Perfil</a></li>
+				  <li role="presentation"><a href="sSite.html">Site</a></li>
+				</ul>
 
 				<div class="container-fluid">
-					<div class="col-xs-12 col-md-4">
-						<h3>Informação Pessoal</h3>
-						<div class="list-group">
-						  <div class="list-group-item">Profissao: Estudante</div>
-						  <div href="#" class="list-group-item">Localidade: Porto</div>
-						  <div href="#" class="list-group-item">Idade: 22 anos</div>
-						  <div href="#" class="list-group-item">Hobbies: Social Engineering, Segurança Web, Linux, Jogos PC</div>
-						  <div href="#" class="list-group-item">Linguagem Favorita: Todas</div>
+					<div class="col-xs-12 col-md-4 col-md-offset-4">
+					<h2>Definições de Perfil</h2>
+						<div class="input-group">
+						  <label>Foto</label>
+						  <input type="file" id="exampleInputFile">
 						</div>
-					</div>
-					<div class="col-xs-12 col-md-4">
-						<h3>Actividade</h3>
-						<div class="list-group">
-						  <a href="topic.html" class="list-group-item">Organização de código <span class="label label-success">Java</span> <span class="label label-success">Game Development</span></a>
+						<br>
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon1">Profissão</span>
+						  <input type="text" class="form-control" placeholder="Estudante" aria-describedby="basic-addon1">
 						</div>
-					</div>
-					<div class="col-xs-12 col-md-4">
-						<h3>Desafios Resolvidos</h3>
-						<div class="list-group">
-						  <a href="#" class="list-group-item disabled">Desafio Bloqueado</a>
-						  <a href="#" class="list-group-item">C++ - Desafio de Encriptação <span class="label label-warning">2º lugar</span></a>
-						  <a href="#" class="list-group-item disabled">Desafio Bloqueado</a>
-						  <a href="#" class="list-group-item disabled">Desafio Bloqueado</a> 
+						<br>
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon1">Localidade</span>
+						  <input type="text" class="form-control" placeholder="Porto" aria-describedby="basic-addon1">
 						</div>
+						<br>
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon1">Data de Nascimento</span>
+						  <input type="text" class="form-control" placeholder="13-01-1993" aria-describedby="basic-addon1">
+						</div>
+						<br>
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon1">Hobbies</span>
+						  <input type="text" class="form-control" placeholder="Programar, Jogar PC ..." aria-describedby="basic-addon1">
+						</div>	
+						<br>
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon1">Linguagem Favorita</span>
+						  <input type="text" class="form-control" placeholder="JS, Java, C++, C, Assembly" aria-describedby="basic-addon1">
+						</div>	
+						<br>
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1">Mostrar Medalhas</span>
+						    <span class="input-group-addon">
+						      <input type="checkbox" aria-label="Mostrar Medalhas" checked>
+						    </span>
+					    </div>
+					    <br>
+					    <div class="input-group">
+							<span class="input-group-addon" id="basic-addon1">Mostrar nome</span>
+						    <span class="input-group-addon">
+						      	<input type="checkbox" aria-label="Nome" checked>
+						      	Nome Completo
+						      	<br>
+						      	<br>
+						      	<input type="checkbox" aria-label="Nickname" >
+						      	Nickname
+						    </span>
+					    </div>
+					    <br>
+					    <p class="text-center"><button type="submit" class="btn btn-default">Confirmar</button></p>
+						
 					</div>
 				</div>
 			</div>
