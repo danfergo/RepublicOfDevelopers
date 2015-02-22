@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>RoD</title>
+	<title>RoD - Your Profile</title>
 
 	<style type="text/css">
 
@@ -43,8 +43,8 @@
             <div class="jumbotron">
                 <div id="profileTitle">
                 <img src="../../resources/fotos/1.jpg" style="height:100px;width:100px;" class="img-circle">
-                <h3>Fernando Pinto</h3>
-                <small>Fundador da RoD</small>
+                <h3><?php echo $name;?></h3>
+                <small><?php echo $title;?></small>
                 <div id="ListMedalsBox">
                     <ul id="ListMedals">
                         <li><img src="../../resources/medals/C++/c++Gold.png" title="C++ Gold" style="width:40px; height:40px;"></li>
@@ -55,17 +55,17 @@
                     <div class="col-xs-12 col-md-4">
                         <h3>Informação Pessoal</h3>
                         <div class="list-group">
-                          <div class="list-group-item">Profissao: Estudante</div>
-                          <div href="#" class="list-group-item">Localidade: Porto</div>
-                          <div href="#" class="list-group-item">Idade: 22 anos</div>
-                          <div href="#" class="list-group-item">Hobbies: Social Engineering, Segurança Web, Linux, Jogos PC</div>
-                          <div href="#" class="list-group-item">Linguagem Favorita: Todas</div>
+                          <div class="list-group-item">Profissao: <?php echo $profission;?></div>
+                          <div href="#" class="list-group-item">Localidade: <?php echo $local;?></div>
+                          <div href="#" class="list-group-item">Idade: <?php echo $age;?> anos</div>
+                          <div href="#" class="list-group-item">Hobbies: <?php echo $hobbies;?></div>
+                          <div href="#" class="list-group-item">Linguagem Favorita: <?php echo $favorite_language;?></div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
                         <h3>Actividade</h3>
                         <div class="list-group">
-                          <a href="topic.html" class="list-group-item">Organização de código <span class="label label-success">Java</span> <span class="label label-success">Game Development</span></a>
+                          <a href="topic" class="list-group-item">Organização de código <span class="label label-success">Java</span> <span class="label label-success">Game Development</span></a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">

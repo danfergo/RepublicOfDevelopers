@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -31,7 +31,7 @@
             <div class="container-fluid">
               <div class="col-xs-12 col-md-4">
               <h2>Definições de Conta</h2>
-                <br>
+              <br>
                 <div class="input-group">
                   <span class="input-group-addon" id="basic-addon1">Email</span>
                   <input type="text" class="form-control" placeholder="NovoEmail@Coolmail.com" aria-describedby="basic-addon1">
