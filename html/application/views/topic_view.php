@@ -17,12 +17,11 @@
 
     <div id="container">
         <div class="container-fluid">
-            <div class="jumbotron">
+            <div class="jumbotron dark">
                 <h2><?php echo $title; ?></h2><span class="label label-success"><?php echo $category ?></span>
                 <h5><img src="../../resources/fotos/1.jpg" style="height:30px;width:30px;" class="img-circle"> <a href="profile"><?php echo $autor; ?></a></h5>
-                <div class="well">
+                <div class="well dark">
                     <?php echo $text; ?>
-                    <hr>
                     <button type="button" class="btn btn-default btn-xs" aria-label="Seguir">
                         <span class="glyphicon glyphicon-pushpin" aria-hidden="true"> Seguir</span>
                     </button>
@@ -30,7 +29,7 @@
                         <span class="glyphicon glyphicon-alert" aria-hidden="true"> Denunciar</span>
                     </button>
                 </div>
-                <div class="comment well">
+                <div class="comment well dark">
                     <p class="text-muted" style="text-align:center;">Ainda nimguém comentou. Sê o primeiro !</p>
                 </div>
                 <textarea class="form-control" rows="3"></textarea>

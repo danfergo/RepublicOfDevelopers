@@ -16,10 +16,16 @@
 
 
   body {
-    background-color: black;
+    background-image:url("../../resources/bg_dark.png");
     padding-top: 70px;
   }
 
+  .dark{
+      background-color: black;
+      background-image: none;
+      border: none;
+      color: white;
+  }
 
 
 </style>

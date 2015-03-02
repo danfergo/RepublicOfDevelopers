@@ -3,30 +3,52 @@
 <head>
   <meta charset="utf-8">
   <title>RoD</title>
-  
-    <style type="text/css">
+  <script type="text/javascript">
+    //Funcao que aplica as mudanças ao site (tema)
+    function changeSite(){
+      if(document.getElementById("lightOpt").checked){
+        //Coloca fundo branco nas diferentes caixas
+        var elements = document.getElementsByClassName("dark");
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.backgroundColor = "white";
+          elements[i].style.color = "black";  
+        }
+        //Troca para background e nav-bar branco 
+        document.body.style.backgroundImage = "url('../../resources/bg_light.png')";
+        document.getElementsByClassName("navbar")[0].className = "navbar navbar-default navbar-fixed-top";
 
-  ::selection{ background-color: #E13300; color: white; }
-  ::moz-selection{ background-color: #E13300; color: white; }
-  ::webkit-selection{ background-color: #E13300; color: white; }
+      } else if (document.getElementById("darkOpt").checked){
+        //Coloca fundo preto nas diferentes caixas
+        var elements = document.getElementsByClassName("dark");
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.backgroundColor = "black";
+          elements[i].style.color = "white";
+        }
+        //Troca para background e nav-bar preto
+        document.body.style.backgroundImage = "url('../../resources/bg_dark.png')";
+        document.getElementsByClassName("navbar")[0].className = "navbar navbar-inverse navbar-fixed-top";  
+        
+      }
+    }
+  </script>
+  <style type="text/css">
+
+    ::selection{ background-color: #E13300; color: white; }
+    ::moz-selection{ background-color: #E13300; color: white; }
+    ::webkit-selection{ background-color: #E13300; color: white; }
+
+    
 
 
 
 
-
-
-</style>
+  </style>
 </head>
 <body>
 
 <div id="container">
     <div class="container-fluid">
-          <div class="jumbotron">
-            <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="#">Conta</a></li>
-              <li role="presentation"><a href="#">Perfil</a></li>
-              <li role="presentation"><a href="#">Site</a></li>
-            </ul>
+          <div class="jumbotron dark">
 
             <div class="container-fluid">
               <div class="col-xs-12 col-md-4">
@@ -111,40 +133,30 @@
                     <label>Tema</label>
                   <div class="radio">
                     <label class="radio-inline">
-                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                      <input type="radio" name="optionsRadios" id="darkOpt" value="option1" checked>
                       Dark
                     </label>
                     <label class="radio-inline">
-                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      <input type="radio" name="optionsRadios" id="lightOpt" value="option2">
                       Light
                     </label>
                   </div>
                   </div>  
                 <br>
-                <div class="input-group">
-                  <span class="input-group-addon" id="basic-addon1">Lingua</span>
-                  <select class="form-control">
-                    <option>Português</option>
-                    <option>Inglês</option>
-                    <option>Francês</option>
-                    <option>Alemão</option>
-                  </select>
-                </div>
-                <br>
                 <fieldset disabled>
                   <form class="form-inline">
                     <label>Convites <span class="badge">0</span></label>
                       <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nome" size="14">
+                        <input type="text" class="form-control" placeholder="Nome" size="7">
                       </div>
                       <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email" size="14">
+                        <input type="email" class="form-control" placeholder="Email" size="7">
                       </div>
                       <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
                   </form>
                 </fieldset>
                 <br>
-                <p class="text-center"><button type="submit" class="btn btn-default">Confirmar</button></p>
+                <p class="text-center"><button type="submit" class="btn btn-default" onclick="changeSite();">Confirmar</button></p>
               </div>
             </div>
           </div>

@@ -32,6 +32,10 @@
         display: inline;
         margin: 5px;
     }
+
+    .list-group-item {
+        color: gray;
+    }
 	
 	</style>
 </head>
@@ -40,7 +44,7 @@
 <div id="container">
 
         <div class="container-fluid">
-            <div class="jumbotron">
+            <div class="jumbotron dark">
                 <div id="profileTitle">
                 <img src="../../resources/fotos/1.jpg" style="height:100px;width:100px;" class="img-circle">
                 <h3><?php echo $name;?></h3>

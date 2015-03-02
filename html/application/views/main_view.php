@@ -12,11 +12,14 @@
 
 
     .topic {
-        
+        background-color: black;
+        color: white;
         overflow: hidden;
     }
 
     .news {
+        background-color: black;
+        color: white;
         height: 400px;
         overflow: hidden;
     }
@@ -24,17 +27,25 @@
     .news .description {
         font-size: 12px;
         margin: 10px;
+        color: white;
+    }
+
+    .description {
+        color: white;
     }
 
     .quiz {
-        
+        background-color: #222;
+        color: white;
         text-align: center;
-        background-color: #eee;
     }
 
     .quiz h3 {
         font-weight: bold;
-        color: gray;
+    }
+
+    h3 {
+        color: white;
     }
 
     #popupTopic {
@@ -74,7 +85,7 @@
         
         
         <div class="row" style = "margin-left: 5px; margin-right: 5px;">
-        <div class="col-xs-12 col-md-3" onclick="window.location='news.html';">
+            <div class="col-xs-12 col-md-3" onclick="window.location='news.html';">
                 <div class="thumbnail news">
                   <div class="caption">
                     <h3>Por 99 cêntimos por mês pode ser possível evitar os anúncios do YouTube</h3>
@@ -92,7 +103,7 @@
                     <h3>Organização de código</h3>
                     <span class="label label-success">Java</span> <span class="label label-success">GameDevelopment</span>
                     <hr>
-                    <p>Estou a fazer um jogo em java e não consigo decidir como organizar o código, qual é a melhor maneira ? </p>
+                    <div class="description">Estou a fazer um jogo em java e não consigo decidir como organizar o código, qual é a melhor maneira ? </div>
                   </div>
                 </div>
             </div>  
@@ -157,7 +168,7 @@
                     <h3>VideoJogos</h3>
                     <span class="label label-success">GameDevelopment</span>
                     <hr>
-                    <p>Alguem tem bons tutorias para quem quer aprender a programar jogos ?</p>
+                    <div class="description">Alguem tem bons tutorias para quem quer aprender a programar jogos ?</div>
                   </div>
                 </div>
             </div>  
